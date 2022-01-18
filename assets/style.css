@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Prociono&family=Ruluko&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color: #CDEDAE;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    gap:5%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+a, .home, .produtos, .sobre-empresa {
+    margin-top: 4%;
+    font-size:20px;
+    font-family: 'Prociono', serif;
+    color:white;
+}
+
+.logo {
+    width: 8%;
+    position: absolute;
+    left:2%;
+    top:5%;
+}
+
+.nome-marca {
+    margin-top: 4.5%;
+    font-size:25px;
+    font-family: 'Prociono', serif;
+    color:rgb(0, 104, 35);
+    margin-left: 0px;
+    position: absolute;
+    left:12%;
+    top:-2%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+
+.img-produto {
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.ecologico-sustentavel {
+    font-family: 'Potta One', cursive;
+    font-size: 30px;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.texto {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: 60%;
+    font-family: 'Ruluko', sans-serif;
+    font-size: 20px;
+}
+
+.link, .bloco {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    gap:15%;
+}
+
+.link, .saiba-mais, .projetos {
+    background-color: #29810A;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-family: 'Ruluko', sans-serif;
+    font-size: 10pt;
+}
+
+.link, .saiba-mais {
+    margin-left: 15%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Prociono', serif;
+}
