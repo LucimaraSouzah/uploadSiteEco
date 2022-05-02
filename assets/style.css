@@ -19,6 +19,7 @@ body {
     gap:5%;
     padding-bottom: 10px;
     border-bottom: 2px solid white;
+    padding-right: 30px;
 }
 
 a, .home, .produtos, .sobre-empresa {
@@ -96,6 +97,7 @@ a, .home, .produtos, .sobre-empresa {
     color: white;
     font-family: 'Ruluko', sans-serif;
     font-size: 10pt;
+    cursor: pointer;
 }
 
 .link, .saiba-mais {
