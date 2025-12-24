@@ -2,6 +2,8 @@
 
 Uma landing page moderna e completa desenvolvida para demonstrar habilidades em desenvolvimento web, design e otimização para conversão.
 
+Acesse: https://lucimarasouzah.github.io/uploadSiteEco/
+
 ## 📋 Sobre o Projeto
 
 Este projeto é uma landing page completa para uma loja de produtos ecológicos e sustentáveis. Foi desenvolvido com foco em criar uma experiência de usuário excepcional, design profissional e otimização para conversão, demonstrando habilidades práticas em desenvolvimento front-end.
