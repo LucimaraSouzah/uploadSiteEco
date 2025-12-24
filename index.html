@@ -4,32 +4,591 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO e Meta Tags -->
+    <title>EcoStore - Produtos Ecológicos e Sustentáveis | Transforme seu estilo de vida</title>
+    <meta name="description" content="Descubra produtos ecológicos e sustentáveis na EcoStore. Kits ecológicos, produtos recicláveis e soluções para um futuro mais verde. Entrega rápida e qualidade garantida.">
+    <meta name="keywords" content="produtos ecológicos, sustentabilidade, kit ecológico, produtos recicláveis, loja verde, eco-friendly">
+    <meta name="author" content="EcoStore">
+    
+    <!-- Open Graph / Facebook (Meta Ads) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecostore.com.br/">
+    <meta property="og:title" content="EcoStore - Produtos Ecológicos e Sustentáveis">
+    <meta property="og:description" content="Transforme seu estilo de vida com produtos ecológicos e sustentáveis. Kits completos para começar sua jornada verde hoje mesmo!">
+    <meta property="og:image" content="https://ecostore.com.br/assets/images/kit-completo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ecostore.com.br/">
+    <meta property="twitter:title" content="EcoStore - Produtos Ecológicos e Sustentáveis">
+    <meta property="twitter:description" content="Transforme seu estilo de vida com produtos ecológicos e sustentáveis.">
+    <meta property="twitter:image" content="https://ecostore.com.br/assets/images/kit-completo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css">
-    <title>EcoStore</title>
+    
+    <!-- Meta Pixel Code (substitua YOUR_PIXEL_ID pelo seu ID real) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // Substitua pelo seu Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="logo" src="assets/images/logo.png">
-            <h1 class="nome-marca">EcoStore</h1>
-            <a href=""><h1 class="home">HOME</h1></a>
-            <a href=""><h1 class="produtos">PRODUTOS</h1></a>
-            <a href=""><h1 class="sobre-empresa">SOBRE A EMPRESA</h1></a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/logo.png" alt="EcoStore Logo" class="logo-img">
+                <span class="logo-text">EcoStore</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#produtos" class="nav__link">Produtos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contato" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="close-icon">✕</i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <main class="conteudo">
-        <img class="img-produto" src="assets/images/produto.png">
-        <div class="descricao">
-            <h2 class="ecologico-sustentavel">KIT ECOLÓGICO E SUSTENTÁVEL</h2>
-            <span class="texto">Preserve o meio ambiente, pensando no futuro e garantindo uma melhor qualidade de vida. Ao reduzir, reutilizar e reciclcar você verá uma diferença no seu interior e exterior. </span>
-            <div class="bloco">
-            <h4 class="saiba-mais">SAIBA MAIS</h4>
-            <h4 class="projetos">PROJETOS</h4>
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <div class="hero__data">
+                    <span class="hero__subtitle">Bem-vindo à EcoStore</span>
+                    <h1 class="hero__title">
+                        Transforme seu estilo de vida com produtos
+                        <span class="hero__title-highlight">ecológicos e sustentáveis</span>
+                    </h1>
+                    <p class="hero__description">
+                        Preserve o meio ambiente, pensando no futuro e garantindo uma melhor qualidade de vida. 
+                        Ao reduzir, reutilizar e reciclar você verá uma diferença no seu interior e exterior.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#produtos" class="button button--primary">
+                            Ver Produtos
+                            <span class="button__icon">→</span>
+                        </a>
+                        <a href="#sobre" class="button button--secondary">
+                            Saiba Mais
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__number">10K+</span>
+                            <span class="stat__label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">500+</span>
+                            <span class="stat__label">Produtos Ecológicos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">100%</span>
+                            <span class="stat__label">Sustentável</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/kit-completo.jpg" alt="Kit Ecológico e Sustentável" class="hero__img">
+                    <div class="hero__badge">
+                        <span class="badge__text">Produto do Mês</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+        <div class="hero__shape"></div>
+    </section>
 
-    <footer class="rodape">
-        <h5 class="criado-por">Created by @Lucimarasouza8</h5>
+    <!-- Produtos Section -->
+    <section class="products section" id="produtos">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Nossos Produtos</span>
+                <h2 class="section__title">Kits Ecológicos e Sustentáveis</h2>
+                <p class="section__description">
+                    Descubra nossa seleção cuidadosa de produtos que fazem a diferença para o planeta
+                </p>
+            </div>
+            
+            <div class="products__container grid">
+                <article class="product__card">
+                    <div class="product__image">
+                        <img src="assets/images/kit-completo.jpg" alt="Kit Ecológico Completo" class="product__img">
+                        <span class="product__badge">Mais Vendido</span>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Kit Ecológico Completo</h3>
+                        <p class="product__description">
+                            Kit completo com produtos sustentáveis para começar sua jornada verde hoje mesmo.
+                        </p>
+                        <div class="product__footer">
+                            <span class="product__price">
+                                <span class="price__currency">R$</span>
+                                <span class="price__value">149,90</span>
+                            </span>
+                            <button class="button button--small" onclick="fbq('track', 'AddToCart');">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="product__card">
+                    <div class="product__image">
+                        <img src="assets/images/kit-iniciante.png" alt="Kit Iniciante" class="product__img">
+                        <span class="product__badge product__badge--new">Novo</span>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Kit Iniciante</h3>
+                        <p class="product__description">
+                            Perfeito para quem está começando a jornada sustentável. Produtos essenciais.
+                        </p>
+                        <div class="product__footer">
+                            <span class="product__price">
+                                <span class="price__currency">R$</span>
+                                <span class="price__value">89,90</span>
+                            </span>
+                            <button class="button button--small" onclick="fbq('track', 'AddToCart');">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="product__card">
+                    <div class="product__image">
+                        <img src="assets/images/kit-premium.jpg" alt="Kit Premium" class="product__img">
+                        <span class="product__badge product__badge--premium">Premium</span>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Kit Premium</h3>
+                        <p class="product__description">
+                            A experiência completa em sustentabilidade. Produtos de alta qualidade e durabilidade.
+                        </p>
+                        <div class="product__footer">
+                            <span class="product__price">
+                                <span class="price__currency">R$</span>
+                                <span class="price__value">249,90</span>
+                            </span>
+                            <button class="button button--small" onclick="fbq('track', 'AddToCart');">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="about section" id="sobre">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__image">
+                    <img src="assets/images/kit-completo.jpg" alt="Sobre a EcoStore" class="about__img">
+                </div>
+                <div class="about__content">
+                    <span class="section__subtitle">Sobre Nós</span>
+                    <h2 class="section__title">Nossa Missão</h2>
+                    <p class="about__description">
+                        A EcoStore nasceu com a missão de tornar produtos ecológicos e sustentáveis acessíveis 
+                        a todos. Acreditamos que pequenas mudanças no dia a dia podem gerar grandes impactos 
+                        positivos no meio ambiente.
+                    </p>
+                    <p class="about__description">
+                        Trabalhamos apenas com fornecedores comprometidos com práticas sustentáveis e 
+                        produtos que realmente fazem a diferença. Cada compra contribui para um futuro 
+                        mais verde e sustentável.
+                    </p>
+                    <div class="about__features">
+                        <div class="feature">
+                            <div class="feature__icon-wrapper">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 12c0 1.66-1.34 3-3 3H6c-1.66 0-3-1.34-3-3s1.34-3 3-3h12c1.66 0 3 1.34 3 3z"/>
+                                    <path d="M6 9V6c0-1.66 1.34-3 3-3h6c1.66 0 3 1.34 3 3v3"/>
+                                    <path d="M18 15v3c0 1.66-1.34 3-3 3H9c-1.66 0-3-1.34-3-3v-3"/>
+                                </svg>
+                            </div>
+                            <div class="feature__content">
+                                <h4 class="feature__title">100% Reciclável</h4>
+                                <p class="feature__text">Todos os produtos são recicláveis</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon-wrapper">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                    <path d="M2 12h20"/>
+                                </svg>
+                            </div>
+                            <div class="feature__content">
+                                <h4 class="feature__title">Impacto Positivo</h4>
+                                <p class="feature__text">Contribuímos para o meio ambiente</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon-wrapper">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/>
+                                    <path d="M6 8V6"/>
+                                </svg>
+                            </div>
+                            <div class="feature__content">
+                                <h4 class="feature__title">Entrega Rápida</h4>
+                                <p class="feature__text">Receba em casa com segurança</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="contact section" id="contato">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Entre em Contato</span>
+                <h2 class="section__title">Fale Conosco</h2>
+                <p class="section__description">
+                    Tem dúvidas? Quer saber mais sobre nossos produtos? Estamos aqui para ajudar!
+                </p>
+            </div>
+            
+            <div class="contact__container">
+                <form class="contact__form" id="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form__group">
+                        <input type="text" name="name" placeholder="Seu nome" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" placeholder="Seu e-mail" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" placeholder="Seu telefone" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <textarea name="message" placeholder="Sua mensagem" class="form__input form__textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button button--primary button--full">
+                        Enviar Mensagem
+                        <span class="button__icon">→</span>
+                    </button>
+                </form>
+                
+                <div class="contact__info">
+                    <div class="info__card">
+                        <div class="info__icon-wrapper">
+                            <svg class="info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h4 class="info__title">E-mail</h4>
+                        <p class="info__text">Contatlmtechsolutions@gmail.com</p>
+                    </div>
+                    <div class="info__card">
+                        <div class="info__icon-wrapper">
+                            <svg class="info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <h4 class="info__title">Telefone</h4>
+                        <p class="info__text">(31) 99572-9646</p>
+                    </div>
+                    <div class="info__card">
+                        <div class="info__icon-wrapper">
+                            <svg class="info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h4 class="info__title">Endereço</h4>
+                        <p class="info__text">São Paulo, SP - Brasil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__group">
+                        <div class="footer__logo">
+                            <img src="assets/images/logo.png" alt="EcoStore" class="footer__logo-img">
+                            <span class="footer__logo-text">EcoStore</span>
+                        </div>
+                        <p class="footer__description">
+                            Transformando vidas através de produtos ecológicos e sustentáveis.
+                        </p>
+                        <div class="footer__social">
+                            <a href="https://instagram.com/LMTech.solutions" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/5531995729646?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="social__link" aria-label="WhatsApp">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__group">
+                        <h3 class="footer__title">Links Rápidos</h3>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#produtos" class="footer__link">Produtos</a></li>
+                            <li><a href="#sobre" class="footer__link">Sobre</a></li>
+                            <li><a href="#contato" class="footer__link">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__group">
+                        <h3 class="footer__title">Suporte</h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link" onclick="openModal('faq-modal'); return false;">Perguntas Frequentes</a></li>
+                            <li><a href="#" class="footer__link" onclick="openModal('privacy-modal'); return false;">Política de Privacidade</a></li>
+                            <li><a href="#" class="footer__link" onclick="openModal('terms-modal'); return false;">Termos de Uso</a></li>
+                            <li><a href="#" class="footer__link" onclick="openModal('returns-modal'); return false;">Trocas e Devoluções</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__group">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__description">Receba ofertas exclusivas e dicas sustentáveis</p>
+                        <form class="newsletter__form" onsubmit="handleNewsletter(event)">
+                            <input type="email" placeholder="Seu e-mail" class="newsletter__input" required>
+                            <button type="submit" class="button button--small">Inscrever</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer__copy">
+                    <p>&copy; 2024 EcoStore. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scrolltop" id="scroll-top">
+        <span class="scrolltop__icon">↑</span>
+    </a>
+
+    <!-- Modals -->
+    <!-- FAQ Modal -->
+    <div class="modal" id="faq-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Perguntas Frequentes</h2>
+                <button class="modal__close" onclick="closeModal('faq-modal')">✕</button>
+            </div>
+            <div class="modal__body">
+                <div class="faq__item">
+                    <h3 class="faq__question">Como faço meu pedido?</h3>
+                    <p class="faq__answer">Você pode fazer seu pedido diretamente pelo site, clicando no botão "Comprar Agora" no produto desejado. Em seguida, preencha seus dados e finalize a compra.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Quais são as formas de pagamento?</h3>
+                    <p class="faq__answer">Aceitamos cartão de crédito, débito, PIX e boleto bancário. Todos os pagamentos são processados de forma segura.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Qual o prazo de entrega?</h3>
+                    <p class="faq__answer">O prazo de entrega varia de 5 a 10 dias úteis, dependendo da sua região. Para grandes centros, o prazo pode ser menor.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Os produtos são realmente ecológicos?</h3>
+                    <p class="faq__answer">Sim! Todos os nossos produtos são 100% ecológicos, sustentáveis e recicláveis. Trabalhamos apenas com fornecedores certificados.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Como posso rastrear meu pedido?</h3>
+                    <p class="faq__answer">Após a confirmação do pagamento, você receberá um código de rastreamento por e-mail. Use esse código no site dos Correios para acompanhar sua entrega.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Vocês fazem entregas para todo o Brasil?</h3>
+                    <p class="faq__answer">Sim, entregamos para todo o território nacional. Os valores e prazos de frete são calculados no momento da compra.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal" id="privacy-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Política de Privacidade</h2>
+                <button class="modal__close" onclick="closeModal('privacy-modal')">✕</button>
+            </div>
+            <div class="modal__body">
+                <p class="modal__text"><strong>Última atualização:</strong> Janeiro de 2024</p>
+                
+                <h3 class="modal__subtitle">1. Informações que Coletamos</h3>
+                <p class="modal__text">Coletamos informações que você nos fornece diretamente, como nome, e-mail, telefone e endereço quando você faz uma compra ou se inscreve em nossa newsletter.</p>
+                
+                <h3 class="modal__subtitle">2. Como Usamos suas Informações</h3>
+                <p class="modal__text">Utilizamos suas informações para processar pedidos, enviar comunicações sobre produtos e serviços, melhorar nossa plataforma e personalizar sua experiência.</p>
+                
+                <h3 class="modal__subtitle">3. Compartilhamento de Informações</h3>
+                <p class="modal__text">Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto quando necessário para processar seu pedido ou quando exigido por lei.</p>
+                
+                <h3 class="modal__subtitle">4. Segurança dos Dados</h3>
+                <p class="modal__text">Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</p>
+                
+                <h3 class="modal__subtitle">5. Seus Direitos</h3>
+                <p class="modal__text">Você tem o direito de acessar, corrigir, atualizar ou solicitar a exclusão de suas informações pessoais a qualquer momento. Entre em contato conosco para exercer esses direitos.</p>
+                
+                <h3 class="modal__subtitle">6. Cookies</h3>
+                <p class="modal__text">Utilizamos cookies e tecnologias similares para melhorar sua experiência, analisar o uso do site e personalizar conteúdo. Você pode gerenciar suas preferências de cookies nas configurações do navegador.</p>
+                
+                <h3 class="modal__subtitle">7. Alterações nesta Política</h3>
+                <p class="modal__text">Podemos atualizar esta política de privacidade periodicamente. Notificaremos você sobre mudanças significativas publicando a nova política nesta página.</p>
+                
+                <h3 class="modal__subtitle">8. Contato</h3>
+                <p class="modal__text">Para questões sobre esta política de privacidade, entre em contato conosco através do e-mail: <strong>privacidade@ecostore.com.br</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Use Modal -->
+    <div class="modal" id="terms-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Termos de Uso</h2>
+                <button class="modal__close" onclick="closeModal('terms-modal')">✕</button>
+            </div>
+            <div class="modal__body">
+                <p class="modal__text"><strong>Última atualização:</strong> Janeiro de 2024</p>
+                
+                <h3 class="modal__subtitle">1. Aceitação dos Termos</h3>
+                <p class="modal__text">Ao acessar e usar este site, você concorda em cumprir e estar vinculado a estes Termos de Uso. Se você não concordar com alguma parte destes termos, não deve usar nosso site.</p>
+                
+                <h3 class="modal__subtitle">2. Uso do Site</h3>
+                <p class="modal__text">Você concorda em usar o site apenas para fins legais e de maneira que não infrinja os direitos de terceiros ou restrinja ou iniba o uso e aproveitamento do site por terceiros.</p>
+                
+                <h3 class="modal__subtitle">3. Propriedade Intelectual</h3>
+                <p class="modal__text">Todo o conteúdo do site, incluindo textos, gráficos, logotipos, ícones, imagens e software, é propriedade da EcoStore e está protegido por leis de direitos autorais.</p>
+                
+                <h3 class="modal__subtitle">4. Produtos e Preços</h3>
+                <p class="modal__text">Reservamos o direito de modificar preços, descrições e disponibilidade de produtos a qualquer momento, sem aviso prévio. Fazemos o possível para garantir a precisão das informações, mas não garantimos que todas as informações estejam sempre atualizadas.</p>
+                
+                <h3 class="modal__subtitle">5. Pedidos e Pagamentos</h3>
+                <p class="modal__text">Ao fazer um pedido, você concorda em fornecer informações precisas e completas. Reservamos o direito de recusar ou cancelar qualquer pedido por qualquer motivo, incluindo limitações de quantidade ou erros no preço.</p>
+                
+                <h3 class="modal__subtitle">6. Limitação de Responsabilidade</h3>
+                <p class="modal__text">A EcoStore não será responsável por quaisquer danos diretos, indiretos, incidentais ou consequenciais resultantes do uso ou incapacidade de usar nosso site ou produtos.</p>
+                
+                <h3 class="modal__subtitle">7. Modificações dos Termos</h3>
+                <p class="modal__text">Reservamos o direito de modificar estes termos a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no site.</p>
+                
+                <h3 class="modal__subtitle">8. Lei Aplicável</h3>
+                <p class="modal__text">Estes termos são regidos pelas leis do Brasil. Qualquer disputa será resolvida nos tribunais competentes do Brasil.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Returns and Exchanges Modal -->
+    <div class="modal" id="returns-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Trocas e Devoluções</h2>
+                <button class="modal__close" onclick="closeModal('returns-modal')">✕</button>
+            </div>
+            <div class="modal__body">
+                <p class="modal__text"><strong>Garantimos sua satisfação! Nossa política de trocas e devoluções foi criada para sua tranquilidade.</strong></p>
+                
+                <h3 class="modal__subtitle">Prazo para Trocas e Devoluções</h3>
+                <p class="modal__text">Você tem <strong>7 dias corridos</strong>, a partir da data de recebimento do produto, para solicitar troca ou devolução.</p>
+                
+                <h3 class="modal__subtitle">Condições para Trocas</h3>
+                <ul class="modal__list">
+                    <li>Produto deve estar em sua embalagem original</li>
+                    <li>Produto não pode ter sido usado ou danificado</li>
+                    <li>Etiquetas e selos devem estar intactos</li>
+                    <li>Nota fiscal ou comprovante de compra deve estar presente</li>
+                </ul>
+                
+                <h3 class="modal__subtitle">Como Solicitar Troca</h3>
+                <ol class="modal__list">
+                    <li>Entre em contato conosco através do e-mail <strong>Contatlmtechsolutions@gmail.com</strong> ou telefone</li>
+                    <li>Informe o número do pedido e o motivo da troca</li>
+                    <li>Nossa equipe enviará um código de postagem</li>
+                    <li>Envie o produto pelos Correios usando o código fornecido</li>
+                    <li>Após recebermos e analisarmos, enviaremos o novo produto ou reembolso</li>
+                </ol>
+                
+                <h3 class="modal__subtitle">Reembolso</h3>
+                <p class="modal__text">O reembolso será processado no mesmo método de pagamento utilizado na compra original. O valor será creditado em até <strong>10 dias úteis</strong> após a confirmação do recebimento do produto devolvido.</p>
+                
+                <h3 class="modal__subtitle">Frete de Devolução</h3>
+                <p class="modal__text">Em caso de defeito do produto ou erro nosso, o frete de devolução é por nossa conta. Para trocas por arrependimento, o frete de devolução é por conta do cliente.</p>
+                
+                <h3 class="modal__subtitle">Produtos Não Elegíveis</h3>
+                <ul class="modal__list">
+                    <li>Produtos personalizados ou feitos sob medida</li>
+                    <li>Produtos danificados por uso inadequado</li>
+                    <li>Produtos sem embalagem original ou com etiquetas removidas</li>
+                </ul>
+                
+                <h3 class="modal__subtitle">Precisa de Ajuda?</h3>
+                <p class="modal__text">Nossa equipe está pronta para ajudar! Entre em contato:</p>
+                <ul class="modal__list">
+                    <li><strong>E-mail:</strong> Contatlmtechsolutions@gmail.com</li>
+                    <li><strong>Telefone:</strong> (31) 99572-9646</li>
+                    <li><strong>Horário:</strong> Segunda a Sexta, das 9h às 18h</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/script.js"></script>
 </body>
 </html>
